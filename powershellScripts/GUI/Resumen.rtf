@@ -1,0 +1,164 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2058{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Lucida Console;}{\f2\fnil Lucida Console;}{\f3\fnil Calibri;}{\f4\fnil\fcharset0 Liberation Mono;}{\f5\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;\red245\green245\blue245;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang10\par
+\par
+$Button.Add_Click(\par
+\{\par
+$Label3.Text =\~ [datetime]::FromFileTime((Get-ADUser -identity $ComboBox.selectedItem -Properties pwdLastSet).pwdLastSet).ToString('MM dd yy : hh ss')\par
+\}\par
+)\par
+\par
+Add-Type -assembly System.Windows.Forms\par
+\par
+main_form = New-Object System.Windows.Forms.Form\par
+$main_form.Text = 'Lauch Python IDLE'\par
+\par
+$main_form.Width = 600\par
+$main_form.Height = 400\par
+$main_form.AutoSize = $true\par
+\par
+$Label = New-Object System.Windows.Forms.Label\par
+$Label.Text = "Welcome to the python note taking."\par
+$Label.Location = New-Object System.Drawing.Point(200, 210)\par
+$Label.AutoSize = $true\par
+$main_form.Controls.Add($Label)\par
+\par
+$main_form.ShowDialog()\par
+\par
+$objName = New-Object System.Windows.Forms.Label\par
+$objName.Text = ""\par
+$objName.Location = New-Object System.Drawing.Point(200, 210)\par
+$Label.AutoSize = $true\par
+$main_form.Controls.Add($Label)\par
+\par
+$objName = New-Object System.Windows.Forms.CheckBox \par
+$objName.Location = New-Object System.Drawing.Point(200, 210)\par
+$objName.AutoSize = $true\par
+$main_form.Controls.Add(objName)\par
+\par
+$objName = New-Object System.Windows.Forms.RadioButton \par
+$objName.Location = New-Object System.Drawing.Point(200, 210)\par
+$objName.AutoSize = $true\par
+$main_form.Controls.Add($objName)\par
+\par
+$objName = New-Object System.Windows.Forms.TextBox\par
+$objName.Text = "Friendly Reminder"\par
+$objName.Location = New-Object System.Drawing.Point(200, 210)\par
+$objName.AutoSize = $true\par
+$main_form.Controls.Add($objName)\par
+\par
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.dc.fi.udc.es/~afyanez/Docencia/2023/Grado/Trabajos/PowerShell-MPL-Memoria.pdf\par
+{{\field{\*\fldinst{HYPERLINK https://learn.microsoft.com/es-es/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.4 }}{\fldrslt{https://learn.microsoft.com/es-es/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.4\ul0\cf0}}}}\f0\fs22\par
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://sabia.tic.udc.es/docencia/is/old/2006-2007/docs/transparencias/01-introduccion.pdf\par
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://repositorio.utn.edu.ec/bitstream/123456789/1116/1/04%20ISC%20064%20CAPITULO%20I.pdf\par
+{{\field{\*\fldinst{HYPERLINK https://theitbros.com/powershell-gui-for-scripts/#penci-Create-a-GUI-for-PowerShell-Script-Using-the-WinForms-Class }}{\fldrslt{https://theitbros.com/powershell-gui-for-scripts/#penci-Create-a-GUI-for-PowerShell-Script-Using-the-WinForms-Class\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/new-timespan?view=powershell-7.4 }}{\fldrslt{https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/new-timespan?view=powershell-7.4\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.4 }}{\fldrslt{https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-date?view=powershell-7.4\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators?view=powershell-7.4 }}{\fldrslt{https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators?view=powershell-7.4\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://learn.microsoft.com/es-es/powershell/module/microsoft.powershell.core/about/about_foreach?view=powershell-7.4 }}{\fldrslt{https://learn.microsoft.com/es-es/powershell/module/microsoft.powershell.core/about/about_foreach?view=powershell-7.4\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://stackoverflow.com/questions/56965510/what-is-meaning-in-powershell }}{\fldrslt{https://stackoverflow.com/questions/56965510/what-is-meaning-in-powershell\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/start-process?view=powershell-7.4 }}{\fldrslt{https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/start-process?view=powershell-7.4\ul0\cf0}}}}\f0\fs22\par
+\f1 Get-Process\par
+Get-Service\par
+\f0 $PSVersionTable\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Least congnitive distance\par
+{\pntext\f5\'B7\tab}verb-noun\par
+{\pntext\f5\'B7\tab}Core cmdlets\par
+{\pntext\f5\'B7\tab}WSMan\par
+{\pntext\f5\'B7\tab}SSH\par
+{\pntext\f5\'B7\tab}Network Switch cmdlets (in the NetworkSwitch module), which allow management of switches that are Windows Server 2012 R2 certified to have management related to global configuration, VLAN configuration, and \par
+{\pntext\f5\'B7\tab}layer 2 port configuration performed.\par
+{\pntext\f5\'B7\tab}OneGet, which allows the discovery and installation of packages from around the web, including services such as Chocolatey\par
+{\pntext\f5\'B7\tab}Part of WMF 5.0\par
+
+\pard\sa200\sl276\slmult1 {{\field{\*\fldinst{HYPERLINK https://youtu.be/sQm4zRvvX58?t=1353 }}{\fldrslt{https://youtu.be/sQm4zRvvX58?t=1353\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.4 }}{\fldrslt{https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.4\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://stackoverflow.com/questions/33707193/how-to-convert-string-to-integer-in-powershell }}{\fldrslt{https://stackoverflow.com/questions/33707193/how-to-convert-string-to-integer-in-powershell\ul0\cf0}}}}\f0\fs22\par
+Methods of arrays\par
+(0..9).Where\{ $_ % 2 \}\par
+Where(scriptblock expression[, WhereOperatorSelectionMode mode\par
+                            [, int numberToReturn]])\par
+# Set all LastAccessTime properties of files to the current date.\par
+(dir 'C:\\Temp').ForEach('LastAccessTime', (Get-Date))\par
+# View the newly set LastAccessTime of all items, and find Unique entries.\par
+(dir 'C:\\Temp').ForEach('LastAccessTime') | Get-Unique\par
+___\par
+("1/1/2017", "2/1/2017", "3/1/2017").ForEach([datetime])\par
+\par
+about_Regular_Expressions\par
+{{\field{\*\fldinst{HYPERLINK https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.4 }}{\fldrslt{https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.4\ul0\cf0}}}}\f0\fs22\par
+\f2  \par
+\par
+\f1\lang2058 Get-Process | Format-List\par
+| fl\par
+| ft\par
+gtz\f2\lang10\par
+Get-Module -ListAvailable \par
+Get-Module -ListAvailable \f1\lang2058 -SkipEditionCheck\par
+Get-Alias dir\par
+Get-Alias\par
+Get-ChildItem\par
+Set-Location\par
+Get-Module\par
+Get-Module -ListAvailable\par
+Import-module\par
+Get-Command\par
+Get-Command -Module Hyper-V | Select -Unique Noun | Sort Noun\par
+(Get-Module Microsoft.Powershell.Utility).ExportedCommands\par
+\f2 (Get-Module  Microsoft.PowerShell.Security ).ExportedCommands\cf2  \par
+\cf0\f1\lang10 Install-Module az\par
+Update-Module az\par
+Update-Help\par
+Save-Help\par
+Get-Help\par
+Get-Help New-VHD -Online\par
+(Get-Command New-VHD).HelpUri\par
+\par
+{\f0{\field{\*\fldinst{HYPERLINK https://github.com/powershell/powershell }}{\fldrslt{https://github.com/powershell/powershell\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://code.visualstudio.com/learn/get-started/basics }}{\fldrslt{https://code.visualstudio.com/learn/get-started/basics\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://stackoverflow.com/questions/29958143/what-are-en0-en1-p2p-and-so-on-that-are-displayed-after-executing-ifconfig }}{\fldrslt{https://stackoverflow.com/questions/29958143/what-are-en0-en1-p2p-and-so-on-that-are-displayed-after-executing-ifconfig\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://www.freecodecamp.org/news/learn-linux-for-beginners-book-basic-to-advanced/?ref=dailydev#heading-part-6-bash-scripting }}{\fldrslt{https://www.freecodecamp.org/news/learn-linux-for-beginners-book-basic-to-advanced/?ref=dailydev#heading-part-6-bash-scripting\ul0\cf0}}}}\f0\fs22\par
+AZURE DEVOPS REPOS\par
+Get-Host\par
+\par
+64 or 32 bit\par
+[intptr]::Size\par
+if output 8 then the system is 64 bit\par
+\par
+{{\field{\*\fldinst{HYPERLINK https://support.apple.com/en-us/102650 }}{\fldrslt{https://support.apple.com/en-us/102650\ul0\cf0}}}}\f0\fs22\par
+\par
+Registry\par
+Certificate Store\par
+Active Directory\par
+RDS\par
+IIS\par
+{{\field{\*\fldinst{HYPERLINK https://youtu.be/sQm4zRvvX58?t=3740 }}{\fldrslt{https://youtu.be/sQm4zRvvX58?t=3740\ul0\cf0}}}}\f0\fs22\par
+\par
+\f3\ltrmark 30/\ltrmark 07/\ltrmark 2024\f0\par
+{{\field{\*\fldinst{HYPERLINK https://learn.microsoft.com/es-mx/powershell/module/microsoft.powershell.management/get-process?view=powershell-7.4&viewFallbackFrom=powershell-6 }}{\fldrslt{https://learn.microsoft.com/es-mx/powershell/module/microsoft.powershell.management/get-process?view=powershell-7.4&viewFallbackFrom=powershell-6\ul0\cf0}}}}\f0\fs22\par
+\par
+C:\\ProgramFiles\\PackageManagement\\ProviderAssemblies\par
+C:\\Users\\crisd\\AppData\\Local\\PackageManagement\\ProviderAssemblies\par
+Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force\par
+C:\\Program\par
+Files\\WindowsPowerShell\\Modules\\PowerShellGet\\1.0.0.1\\PSModule.psm1\par
+C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git\par
+PS C:\\Users\\crisd> git --version                                       git version 2.36.1.windows.1\par
+{{\field{\*\fldinst{HYPERLINK https://github.com/blocage/blocage.github.io?tab=readme-ov-file }}{\fldrslt{https://github.com/blocage/blocage.github.io?tab=readme-ov-file\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://blocage.github.io/ }}{\fldrslt{https://blocage.github.io/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://github.com/jchodera/latex-cv }}{\fldrslt{https://github.com/jchodera/latex-cv\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://www.amazon.com.mx/War-Newts-Gateway-Essentials-English-ebook/dp/B00H9HRAKK }}{\fldrslt{https://www.amazon.com.mx/War-Newts-Gateway-Essentials-English-ebook/dp/B00H9HRAKK\ul0\cf0}}}}\f0\fs22\par
+por Karel Capek (Autor) \par
+{{\field{\*\fldinst{HYPERLINK https://trainingsupport.microsoft.com/en-us/tcmct/forum/all/fte/6eab57f6-5c8f-4ce7-be4f-5d280bf50e9a }}{\fldrslt{https://trainingsupport.microsoft.com/en-us/tcmct/forum/all/fte/6eab57f6-5c8f-4ce7-be4f-5d280bf50e9a\ul0\cf0}}}}\f0\fs22\par
+\par
+\f4 get-process aesm_service | get-memberget-process aesm_service | get-member\par
+get-process aesm_service\par
+get-process a*\par
+\f0\par
+\par
+\par
+\par
+}
+ 
